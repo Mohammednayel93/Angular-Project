@@ -1,0 +1,8 @@
+<div class="card">
+    <ul class="list-group list-group-flush">
+        <li *ngFor="let item of newsFeatured" class="list-group-item">
+            <a [routerLink]="['/details',item.ID]">{{item.Name}}</a>
+        </li>
+
+    </ul>
+</div>

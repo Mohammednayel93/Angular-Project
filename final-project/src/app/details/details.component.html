@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+        <h2 class="text-center">
+            {{news.Name}}
+        </h2>
+        <div style="padding: 20px">
+            <img [src]=[news.Image] style="width:80%; height:200px;" [alt]=[news.Name] />
+        </div>
+        <p [innerHtml]=[news.Desc]> </p>
+        <button (click)="BackToHome()">رجوع</button>
+    </div>
+</div>
